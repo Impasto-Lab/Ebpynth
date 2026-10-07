@@ -1,4 +1,4 @@
-# Ebpynth
+# Ebpynth [![Pipeline animation](https://img.shields.io/badge/Demo-Pipeline%20Animation-blue?logo=githubpages&logoColor=white)](https://xzzit.github.io/Ebpynth/examples/pipeline-animation.html)
 
 [简体中文](./README_zh.md) | English
 
@@ -11,6 +11,8 @@ The synthesis has these steps:
 3. **Vote.** Each output pixel takes the average color of all patches that cover it.
 
 PatchMatch is random and the code does not fix a seed. Two runs give equivalent results, not identical results. A CUDA GPU is required.
+
+The [pipeline animation](./examples/pipeline-animation.html) shows these steps on real tensors from one run of the `stylit` example. Open the file in a browser. The text of the page is in Chinese.
 
 ## Examples
 
@@ -221,7 +223,12 @@ Ebpynth/
 │   ├── video/               # Video clip and painted keyframes
 │   ├── facestyle/           # Face portrait
 │   ├── texbynum/            # Texture by numbers
-│   └── stylit/              # Illumination-guided 3D render
+│   ├── stylit/              # Illumination-guided 3D render
+│   └── pipeline-animation.html # Step-by-step animation of one run
+├── scripts/                 # Capture of the data for the animation
+│   ├── capture_pipeline_trace.py # Run of the stylit example with a fixed seed
+│   ├── inject_trace.py           # Insert of the captured data into the HTML file
+│   └── trace_utils.py            # Helpers for the capture
 ├── stylize.py               # Image entry point: the whole pipeline, step by step
 └── stylize_video.py         # Video entry point: keyframe propagation and crossfade
 ```
