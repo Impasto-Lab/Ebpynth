@@ -1,4 +1,4 @@
-# Ebpynth [![Pipeline animation](https://img.shields.io/badge/Demo-Pipeline%20Animation-blue?logo=githubpages&logoColor=white)](https://xzzit.github.io/Ebpynth/examples/pipeline-animation.html)
+# Ebpynth [![Pipeline animation](https://img.shields.io/badge/Demo-Pipeline%20Animation-blue?logo=githubpages&logoColor=white)](https://impasto-lab.github.io/Ebpynth/examples/pipeline-animation.html)
 
 [简体中文](./README_zh.md) | English
 
